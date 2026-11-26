@@ -100,6 +100,11 @@ jobs:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
           ALLOWED_USERS: ${{ secrets.ALLOWED_USERS }}
           FIREBASE_URL: ${{ secrets.FIREBASE_URL }}
+          # ── Abyss (1080p upload) ──
+          ABYSS_API_KEY: ${{ secrets.ABYSS_API_KEY }}   # GitHub Secret me daalo (code/chat me kabhi nahi)
+          ABYSS_WORKERS: "2"                            # ek saath kitne episode upload
+          ABYSS_FIREBASE_FOLDER: "server3"
+          # ABYSS_EMBED_TEMPLATE: "https://abysscdn.com/?v={slug}"   # Abyss ka embed format alag ho to yahan badlo
           BASE_URL: https://proud-moon-7329.ayushkum099766.workers.dev
           PORT: "8000"
           # ── auto-restart scheduler ──
